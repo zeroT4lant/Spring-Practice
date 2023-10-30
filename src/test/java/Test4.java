@@ -13,18 +13,18 @@ public class Test4 {
         ClassPathXmlApplicationContext context =
                 new ClassPathXmlApplicationContext("applicationContext2.xml");
 
-        Dog dog = context.getBean("myPet", Dog.class);
-        dog.setName("Belka");
-        Dog yourDog = context.getBean("myPet", Dog.class);
-        yourDog.setName("Strelka");
-
-        System.out.println(dog.getName());
-        System.out.println(yourDog.getName());
+//        Dog dog = context.getBean("myPet", Dog.class);
+//        dog.setName("Belka");
+//        Dog yourDog = context.getBean("myPet", Dog.class);
+//        yourDog.setName("Strelka");
+//
+//        System.out.println(dog.getName());
+//        System.out.println(yourDog.getName());
 
         //переменные ссылаются на один и тот же объект ?
-        System.out.println("переменные ссылаются на один и тот же объект ?");
-        System.out.println(dog.equals(yourDog));
-        System.out.println(dog==yourDog);
+//        System.out.println("переменные ссылаются на один и тот же объект ?");
+//        System.out.println(dog.equals(yourDog));
+//        System.out.println(dog==yourDog);
 
         context.close();
     }
